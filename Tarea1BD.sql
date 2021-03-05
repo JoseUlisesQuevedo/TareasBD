@@ -2,7 +2,7 @@ create table heroes(
 	id_heroe numeric(4,0) constraint pk_heroe primary key,
 	nombre varchar(50) not null,
 	email varchar(100) not null
-)
+);
 
 
 
@@ -37,5 +37,6 @@ values
 -- Quitamos correos que terminen en punto con not like '%.'
 
 select * from heroes h where email like '%@%.%' and email not like '%.'
+
 
 
