@@ -2,7 +2,7 @@ create table heroes(
 	id_heroe numeric(4,0) constraint pk_heroe primary key,
 	nombre varchar(50) not null,
 	email varchar(100) not null
-)
+);
 
 
 
