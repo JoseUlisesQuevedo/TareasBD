@@ -33,10 +33,15 @@ values
 ('Gamora','thefiercestwomaninthegalaxy@thanos.'),
 ('Rocket','shhhhhhhh@darknet.ru');
 
+--CORRECTA: --
 -- Seleccionamos correos de la fomra a@b.c donde a,b y c pueden ser cualquier cadena---
--- Quitamos correos que terminen en punto con not like '%.'
+-- %_ nos garantiza que antes del @ haya al menos un caracter --
+-- @__% garantiza al menos dos caracteres tras el @ --
+-- .__% garantiza al menos dos caracteres tras el punto, y nos asegura también que no terminen en punto
 
-select * from heroes h where email like '%@%.%' and email not like '%.'
+select * from heroes h where email not like '%_@__%.__%'
 
+-- Original: regresaba correctos, pero consideraba algo como .@. como corecto
+select * from heroes where email  like '%@%.%' and email not like '%.'
 
 
