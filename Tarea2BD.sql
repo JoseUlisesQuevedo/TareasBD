@@ -26,7 +26,8 @@ join film f on (i.film_id = f.film_id)
 where rating = 'NC-17'
 group by c.customer_id 
 order by rentas desc
-limit 1
+--Permitimos 5 por si hay varios con el número máximo de rentas. Como están ordenados no hay problema para responder --
+limit 5
 
 -- 3. ¿Qué peliculas son las más rentadas en todas nuestras stores --
 -- La pregunta se interpreta de dos formas: --
