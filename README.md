@@ -1,4 +1,6 @@
-# TareasBD
-Tareas de la materia Bases de Datos
+# Tareas Bases de Datos 1 y 2 #
+## Jose Ulises Quevedo - 189442 ##
+Tareas de la materia Bases de Datos 1 y Bases de Datos 2
 
-Tarea 1: Crear una tabla con datos dados, y luego seleccionar los registros con correos válidos utilizando un query con like
+- BD1: Contiene tareas de Bases de Datos 1
+- BD2: Contiene tareas de Bases de Datos 2
